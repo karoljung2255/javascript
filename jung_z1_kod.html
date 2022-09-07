@@ -1,0 +1,70 @@
+<h1>PLIK ZADANIE 1</h1>
+<textarea cols=70 rows=19>
+<html>
+ <head>
+ <title>Przykład nr tutaj wpisz odpowiedni nume </title>
+ <script language="JavaScript">
+ function WinOpen_jung()
+ {
+window.open("jung_z1_obraz.html","okienko","toolbar=no,directories=no,menubar=no,Resizable=no");
+ }
+ </script>
+ </head>
+<body>
+ <form>
+ <input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_jung()">
+ </form>
+</body>
+</html>
+</textarea>
+
+<h1>PLIK ZADANIE 1 - OBRAZ</h1>
+<textarea cols=70 rows=64>
+<html>
+ <head>
+ <script type="text/javascript">
+ function okno_zamknij_jung()
+ {
+ window.close()
+ }
+ </script>
+ </head>
+<body>
+<h3>Kiedy powstał JavaScript?</h3>
+ Język JavaScript powstał w 1995 roku.<br>
+ <h3>Dlaczego jest to język skryptowy?</h3>
+ JavaScript to język skryptowy, ponieważ jest uruchamiany wyłącznie w przeglądarkach przez co kod nie zostaje skompilowany i pozostaje w formie tekstu.<br>
+ <h3>Gdzie wykonywany jest JavaScript?</h3>
+ JavaScript wykonywany jest w:
+ -w znaczniku &lsaquo;body&rsaquo;<br>
+ -w znaczniku &lsaquo;head&rsaquo;<br>
+ -w znaczniku &lsaquo;html&rsaquo;<br>
+ -w pliku zewnętrznym<br>
+ <h3>Dlaczego jest to bezpieczne narzędzie?</h3>
+ Ze względów bezpieczeństwa JavaScript ma znacznie ograniczone uprawnienia dostępu do zasobów komputera, przy użyciu którego przeglądana jest dana strona, a wszelkie odwołania do funkcji i obiektów wykonywane są w trakcie wykonywania programu.<br>
+ <h3>Czy jest to język obiektowy?</h3>
+ JavaScript to obiektowy język skryptowy. Aplikacje napisane w języku obiektowym działają w maszynie wirtualnej lub w przeglądarce, a kod JavaScript jest uruchamiany wyłącznie w przeglądarkach. Dlatego nie jest on językiem obiektowym.<br><br>
+ <textarae rows=1 cols=78>input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"</textarae><br>
+ To polecenie tworzy przycisk, który po nacisnięciu otwiera nowe okno przeglądarki.<br><br>
+ 
+ <textarae rows=1 cols=113>window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");</textarae><br>
+ To polecenie otwiera nowe okno przeglądarki z ukrytym paskiem narzędzi, ukrytymi przyciskami katalogów i ukrytym menu przeglądarki. Otwarte tym poleceniem okno ma wysokość 280 pikseli i szerokość 160 pikseli, jest oddalone od lewej i górnej krawędzi ekranu o 100 pikseli.<br>
+ <br>
+toolbar=no  -&rsaquo;ukrywa standardowy pasek narzędzi<br>
+directories=no, -&rsaquo;ukrywa przyciski katalogów<br>
+menubar=no, -&rsaquo;ukrywa menu przeglądarki<br>
+Location=no, -&rsaquo;ukrywa pasek adresowy<br>
+Resizable=no, -&rsaquo;określa brak możliwości zmiany rozmiaru okna<br>
+Scrollbars=no, -&rsaquo;ukrywa paski przewijania<br>
+Status=no, -&rsaquo;ukrywa pasek statusu<br>
+height=280, -&rsaquo;ustawia wysokość okna<br>
+width=160, -&rsaquo;ustawia szerokość okna<br>
+top=200, -&rsaquo;ustawia położenie okna względem góry ekranu<br>
+left=200, -&rsaquo;ustawia położenie okna względem lewej strony ekranu<br>
+window.open, -&rsaquo;otwarcie nowego okna<br>
+window.close, -&rsaquo;zamknięcie okna<br>
+ <br><img align=center src="jung_z1_jasper.gif" /><br>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_jung()"/>
+</body>
+</html>
+</textarea>
