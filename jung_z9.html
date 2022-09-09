@@ -1,0 +1,28 @@
+<html>
+<body>
+<div style="color:green;font-size:35px;">
+ <script language="JavaScript">
+var liczba1=prompt("Wpisz pierwszą datę ze stycznia","");
+var liczba3=prompt("Wpisz godzinę do pierwszej daty","");
+var liczba2=prompt("Wpisz drugą datę ze stycznia","");
+var liczba4=prompt("Wpisz godzinę do drugiej daty","");
+var suma;
+ var a=parseFloat(liczba1);
+ var b=parseFloat(liczba2);
+ var g1=parseFloat(liczba3);
+ var g2=parseFloat(liczba4);
+
+ s1=a*24*60*60;
+ s2=b*24*60*60;
+ s3=g1*60*60;
+ s4=g2*60*60;
+ 
+ a1=s1-s3;
+ b1=s2-s4;
+ suma=a1-b1;
+
+ document.write("Między tymi dniami minęło "+suma+" sekund<br>");
+ </script>
+</div>
+</body>
+</html>

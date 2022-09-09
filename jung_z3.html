@@ -1,0 +1,56 @@
+<html>
+ <head>
+ <title>Zadanie 3</title>
+ <script language="JavaScript">
+ function okno_zamknij_jung()
+ {
+window.close();
+ }
+ </script>
+ </head>
+<body>
+
+<h1>1. Rodzaje okienek</h1>
+<ul type=disc>
+<li>Okienko alert – wyświetlająca okienko dialogowe z informacją i przyciskiem OK
+<li>Okienko prompt – generująca okno, w którym użytkownik może wpisać wartość, zwracaną następnie do programu.
+<li>Okienko confirm służy do tego, aby użytkownik coś potwierdził (stąd nazwa confirm).
+</ul>
+
+<h1>2. Rodzaje Konwersji liczb</h1>
+<ul type=disc>
+<li>parseFloat(zmienna) - konwersja zmiennej do typu float
+<li>parseInt(zmienna) - konwersja zmiennej do typu int (liczbowego)
+<li>toString(zmienna) - konwersja zmiennej do typu łańcuchowego
+</ul>
+
+<h1>3. Typy zmiennych w Javascript.</h1>
+<ul type=disc>
+<li>Number - Typ liczbowy
+<ul type=circle>
+ <li>zmienna całkowite
+ <li>zmiennoprzecinkowe
+ </ul>
+<li>String - Typ tekstowy
+<li>Boolea - Typ logiczny
+<li>Null - Pusta zawartość
+<li>Undefined - Typ niezidentyfikowany
+<li>Object - Obiekt
+</ul>
+
+<h1>4. Przy nadawaniu nazw zmiennym należy przestrzegać pewnych zasad:</h1>
+<ol type=1>
+<li>Nazwa zmiennej musi się zaczynać od litery, znaku "$" lub "_", może zawierać tylko litery (bez polskich znaków), cyfry oraz "$" i "_".
+<ul type=circle>
+<li>Poprawne nazwy zmiennych: zmienna1, $wynik, _rozmiar, wynik1, Rekord, $_gracz
+<li>Błędne nazwy zmiennych: 1zmienna, wynik gry, wysokosc&szerokosc, wynik.rekord, &gracz,
+wysokość, imie+nazwisko.
+</ul>
+<li>Wielkość liter ma znaczenie.
+<ul type=circle><li>Rekord i rekord to dwie różne zmienne! Jest to bardzo częsta przyczyna błędów w kodzie początkujących programistów.</ul>
+<li>Należy nie używać słów kluczowych JavaScript jako nazw zmiennych.
+</ol>
+
+<input type="button" value="zamknij okno" onclick="okno_zamknij_jung()"/>
+</body>
+</html>
