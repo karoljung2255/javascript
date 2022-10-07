@@ -1,0 +1,26 @@
+<h1>PLIK ZADANIE 23</h1>
+<textarea rows=27 cols=170>
+<html>
+<body>
+<div style="color:#CC6666;font-size:25px;font-family:arial;">
+ <script language="JavaScript">
+var b=prompt("Wczytaj b","");
+var c=prompt("Wczytaj c","");
+var b_jun=parseFloat(b);
+var c_jun=parseFloat(c);
+a_jun=Math.sqrt((c_jun*c_jun)-(b_jun*b_jun));
+sin_jun=a_jun/c_jun;
+cos_jun=b_jun/c_jun;
+tg_jun=a_jun/b_jun;
+ctg_jun=b_jun/a_jun;
+P_jun=a_jun*b_jun/2;
+obw_jun=a_jun+b_jun+c_jun;
+h3_jun=a_jun*b_jun/c_jun;
+alfa_jun=Math.asin(a_jun/c_jun)*180/Math.PI;
+beta_jun=90-alfa_jun;
+gamma_jun=180-beta_jun-alfa_jun;
+ document.write(" bok a="+a_jun+" <br> bok b="+b_jun+" <br> bok c="+c_jun+" <br><hr> Obwód="+obw_jun.toFixed(3)+" <br> Pole="+P_jun.toFixed(3)+" <br><hr> h1="+a_jun.toFixed(3)+" <br> h2="+b_jun.toFixed(3)+" <br> h3="+h3_jun.toFixed(3)+" <br><hr> alfa="+alfa_jun.toFixed(3)+" <br> beta="+beta_jun.toFixed(3)+" <br> gamma="+gamma_jun.toFixed(3)+" <br><hr> sin(alfa)="+sin_jun.toFixed(3)+" <br> cos(alfa)="+cos_jun.toFixed(3)+" <br> tg(alfa)="+tg_jun.toFixed(3)+" <br> ctg(alfa)="+ctg_jun.toFixed(3)+"");
+ </script>
+</div>
+</body>
+</html>
