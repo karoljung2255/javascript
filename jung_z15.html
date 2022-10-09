@@ -1,0 +1,22 @@
+<html>
+<body>
+<div style="color:green;font-size:35px;">
+ <script language="JavaScript">
+var x1_jun=prompt("Wczytaj x1","");
+var x2_jun=prompt("Wczytaj x2","");
+var suma;
+var x1=parseFloat(x1_jun);
+var x2=parseFloat(x2_jun);
+x1rad=(x1*Math.PI)/180;
+y1=3*Math.pow(x1_jun,5/7);
+y2=2*Math.cos(x1rad)+3*Math.sin(x1rad);
+y3=(Math.pow((Math.pow(x1,5)+2*Math.pow(x2,4)),1/3))*Math.abs(x1-x2);
+ document.write("x1="+x1_jun+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x2="+x2_jun+" <br>");
+ document.write("x1="+x1_jun+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x2="+x1rad.toFixed(2)+" <br>");
+ document.write("y1="+y1.toFixed(2)+"<br>");
+ document.write("y2="+y2.toFixed(2)+"<br>");
+ document.write("y3="+y3.toFixed(2)+"<br>");
+ </script>
+</div>
+</body>
+</html>

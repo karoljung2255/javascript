@@ -1,0 +1,41 @@
+<h1>PLIK ZADANIE 21</h1>
+<textarea rows=41 cols=170>
+<html>
+<head>
+ <script language="JavaScript">
+function jun_drab(d,x)
+{
+ jun_d=parseFloat(d)
+ jun_x=parseFloat(x)
+jun_drabina=Math.sqrt(d*d+x*x)
+ document.getElementsByName('dr')[0].value=jun_drabina.toFixed(2);
+}
+function jun_alf(d,x)
+{
+ jun_d=parseFloat(d)
+ jun_x=parseFloat(x)
+ jun_drabina=Math.sqrt(d*d+x*x)
+ jun_alfa=Math.asin(jun_d/jun_drabina)*180/Math.PI;
+ document.getElementsByName('alfa')[0].value=jun_alfa.toFixed(2);
+}
+ </script>
+</head>
+<body>
+<br> <br>
+<form name="formularz" action="..." onsubmit="
+jun_drab(this.dlugosc_d.value,this.dlugosc_x.value);
+jun_alf(this.dlugosc_d.value,this.dlugosc_x.value);return false">
+ Podaj d=
+ <input size="6" name="dlugosc_d">
+ Podaj x=
+ <input size="6" name="dlugosc_x">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+ Drabina=
+ <input size="6" name="dr">
+ Alfa=
+ <input size="6" name="alfa">
+</form>
+</body>
+</html>
