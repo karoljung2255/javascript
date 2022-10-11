@@ -1,0 +1,39 @@
+<html>
+<head>
+ <script language="JavaScript">
+function jun_h(d,x)
+{
+ jun_d=parseFloat(d)
+ jun_x=parseFloat(x)
+jun_s=Math.sqrt(x*x-d*d)
+ document.getElementsByName('odleglosc')[0].value=jun_s.toFixed(2); /* na dokument */
+}
+function jun_kat(d,x)
+{
+ jun_d=parseFloat(d)
+ jun_x=parseFloat(x)
+ jun_s=Math.sqrt(x*x-d*d)
+ jun_alfa=Math.asin(jun_d/jun_x)*180/Math.PI;
+ document.getElementsByName('kat')[0].value=jun_alfa.toFixed(2);
+}
+ </script>
+</head>
+<body>
+<br> <br>
+<form name="formularz" action="..." onsubmit="
+jun_h(this.dlugosc_d.value,this.dlugosc_x.value);
+jun_kat(this.dlugosc_d.value,this.dlugosc_x.value);return false">
+ Podaj odległość między Dawidem a Arturem=
+ <input size="6" name="dlugosc_d"><br>
+ Podaj drogę przebytą przez samolot=
+ <input size="6" name="dlugosc_x">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+ Wysokość samolotu=
+ <input size="6" name="odleglosc"><br>
+ Samolot wystartował pod kątem=
+ <input size="6" name="kat"><br>
+</form>
+</body>
+</html>

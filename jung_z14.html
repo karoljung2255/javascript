@@ -1,0 +1,22 @@
+<html>
+<body>
+<div style="color:green;font-size:50px;">
+ <script language="JavaScript">
+var No_jun=prompt("Wczytaj N0","");
+var t_jun=prompt("Wczytaj t","");
+var t1_2_jun=prompt("Wczytaj T1/2","");
+var t1_2=parseFloat(t1_2_jun);
+var t=parseFloat(t_jun);
+var No=parseFloat(No_jun);
+lambda=Math.log(2)/t1_2;
+N=No*Math.pow(Math.E,(-1*lambda*t))
+ document.write("N0="+No+"[sztuk] <br>");
+ document.write("t="+t+"[lat] <br>");
+ document.write("T1/2="+t1_2+"[lat] <br>");
+ document.write("Lambda="+lambda.toFixed(7)+"[1/rok] <br>");
+ document.write("N="+N.toFixed(7)+"[sztuk] <br>");
+ //Karol Jung
+ </script>
+</div>
+</body>
+</html>
