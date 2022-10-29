@@ -1,0 +1,25 @@
+<h1>PLIK ZADANIE 28</h1>
+<textarea rows=25 cols=170>
+<html>
+ <head>
+ <script type="text/javascript">
+ function telefon(marka_k,model_k,rok_wydania_k)//początek konstruktora
+{
+this.marka=marka_k;
+this.model=model_k;
+this.rok_wydania=rok_wydania_k;
+}//koniec konstruktora
+ telefon.prototype.wypisz = function () //definicja metody
+ {
+ alert(this.marka + ' ' + this.model+ ' ' + this.rok_wydania);
+ };
+var tel1 = new telefon("Samsung", "Galaxy A31", "2019"); // nowy obiekt osoba1
+var tel2 = new telefon('Apple', 'iPhone 8', '2017');
+tel1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1
+tel2.wypisz();
+ document.write("dostęp do właściwości"+"<br><br>");
+ document.write("Telefon pierwszy:"+"   "+tel1.marka+"   "+tel1.model+"   "+tel1.rok_wydania+"<br>");
+ document.write("Telefon drugi   :"+"   "+tel2.marka+"   "+tel2.model+"   "+tel2.rok_wydania+"<br>");
+ </script>
+  </head>
+  </html>
